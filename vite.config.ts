@@ -6,9 +6,10 @@ import {defineConfig, loadEnv} from 'vite';
 export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
   return {
+    base: '/m-abm/',
     plugins: [react(), tailwindcss()],
     define: {
-      'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
+      'process.env.AIzaSyDZA_9-OyzCUZB1Yyo0bCmRU26Rv9yi4d0Y': JSON.stringify(env.AIzaSyDZA_9-OyzCUZB1Yyo0bCmRU26Rv9yi4d0),
     },
     resolve: {
       alias: {
@@ -16,8 +17,6 @@ export default defineConfig(({mode}) => {
       },
     },
     server: {
-      // HMR is disabled in AI Studio via DISABLE_HMR env var.
-      // Do not modifyâfile watching is disabled to prevent flickering during agent edits.
       hmr: process.env.DISABLE_HMR !== 'true',
     },
   };
