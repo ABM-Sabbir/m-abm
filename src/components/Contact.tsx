@@ -4,22 +4,22 @@ import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 export function Contact() {
   const contactInfo = [
     {
-      icon: <MapPin className="w-6 h-6" />,
+      icon: <MapPin className="w-6 h-6" aria-hidden="true" />,
       title: 'Our Office',
       desc: 'North Bengal Mor, Lalmonirhat Sadar, Lalmonirhat, Rangpur, Bangladesh',
     },
     {
-      icon: <Phone className="w-6 h-6" />,
+      icon: <Phone className="w-6 h-6" aria-hidden="true" />,
       title: 'Direct Line',
       desc: '01511305046',
     },
     {
-      icon: <Mail className="w-6 h-6" />,
+      icon: <Mail className="w-6 h-6" aria-hidden="true" />,
       title: 'Confidential Email',
       desc: 'abmatwork@gmail.com',
     },
     {
-      icon: <Clock className="w-6 h-6" />,
+      icon: <Clock className="w-6 h-6" aria-hidden="true" />,
       title: 'Working Hours',
       desc: 'Sun - Thu: 9:00 AM - 6:00 PM',
     },
@@ -29,7 +29,7 @@ export function Contact() {
     <section id="contact" className="py-24 bg-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-amber-600 font-semibold tracking-wider uppercase text-sm mb-3">Contact Us</h2>
+          <h2 className="text-amber-700 font-semibold tracking-wider uppercase text-sm mb-3">Contact Us</h2>
           <h3 className="text-4xl font-serif font-bold text-slate-900 mb-6 leading-tight">
             Get a Free Consultation
           </h3>
@@ -48,7 +48,7 @@ export function Contact() {
           >
             {contactInfo.map((info, idx) => (
               <div key={idx} className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-amber-50 flex items-center justify-center text-amber-600 shrink-0">
+                <div className="w-12 h-12 rounded-full bg-amber-50 flex items-center justify-center text-amber-700 shrink-0">
                   {info.icon}
                 </div>
                 <div>
@@ -74,7 +74,7 @@ export function Contact() {
                   <input
                     type="text"
                     id="name"
-                    className="w-full px-4 py-3 rounded-sm border border-slate-200 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition-shadow bg-white"
+                    className="w-full px-4 py-3 rounded-sm border border-slate-200 focus:ring-2 focus:ring-amber-700 focus:border-amber-700 outline-none transition-shadow bg-white"
                     placeholder="John Doe"
                   />
                 </div>
@@ -83,7 +83,7 @@ export function Contact() {
                   <input
                     type="email"
                     id="email"
-                    className="w-full px-4 py-3 rounded-sm border border-slate-200 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition-shadow bg-white"
+                    className="w-full px-4 py-3 rounded-sm border border-slate-200 focus:ring-2 focus:ring-amber-700 focus:border-amber-700 outline-none transition-shadow bg-white"
                     placeholder="john@example.com"
                   />
                 </div>
@@ -93,14 +93,14 @@ export function Contact() {
                 <label htmlFor="service" className="block text-sm font-medium text-slate-700 mb-2">Legal Service Required</label>
                 <select
                   id="service"
-                  className="w-full px-4 py-3 rounded-sm border border-slate-200 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition-shadow bg-white"
+                  className="w-full px-4 py-3 rounded-sm border border-slate-200 focus:ring-2 focus:ring-amber-700 focus:border-amber-700 outline-none transition-shadow bg-white"
                 >
-                  <option>Corporate & Company Law</option>
-                  <option>Banking & Finance</option>
-                  <option>Admiralty & Maritime</option>
-                  <option>Dispute Resolution & ADR</option>
-                  <option>Criminal Defence</option>
-                  <option>Other</option>
+                  <option value="corporate">Corporate & Company Law</option>
+                  <option value="banking">Banking & Finance</option>
+                  <option value="admiralty">Admiralty & Maritime</option>
+                  <option value="dispute">Dispute Resolution & ADR</option>
+                  <option value="criminal">Criminal Defence</option>
+                  <option value="other">Other</option>
                 </select>
               </div>
 
@@ -109,14 +109,14 @@ export function Contact() {
                 <textarea
                   id="message"
                   rows={4}
-                  className="w-full px-4 py-3 rounded-sm border border-slate-200 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition-shadow bg-white resize-none"
+                  className="w-full px-4 py-3 rounded-sm border border-slate-200 focus:ring-2 focus:ring-amber-700 focus:border-amber-700 outline-none transition-shadow bg-white resize-none"
                   placeholder="Briefly describe your legal issue..."
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-amber-600 hover:bg-amber-700 text-white font-semibold py-4 rounded-sm transition-colors shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2"
+                className="w-full bg-amber-700 hover:bg-amber-800 text-white font-semibold py-4 rounded-sm transition-colors shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-700 focus-visible:ring-offset-2"
               >
                 Submit Request
               </button>

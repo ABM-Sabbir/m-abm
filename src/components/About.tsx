@@ -37,7 +37,7 @@ export function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-amber-600 font-semibold tracking-wider uppercase text-sm mb-3">About Us</h2>
+            <h2 className="text-amber-700 font-semibold tracking-wider uppercase text-sm mb-3">About Us</h2>
             <h3 className="text-4xl font-serif font-bold text-slate-900 mb-6 leading-tight">
               A Legacy of Trust, Integrity, and Legal Excellence.
             </h3>
@@ -51,7 +51,7 @@ export function About() {
             <ul className="space-y-4 mb-10">
               {features.map((feature, idx) => (
                 <li key={idx} className="flex items-start gap-3">
-                  <CheckCircle2 className="w-6 h-6 text-amber-600 shrink-0" />
+                  <CheckCircle2 className="w-6 h-6 text-amber-700 shrink-0" aria-hidden="true" />
                   <span className="text-slate-700 font-medium">{feature}</span>
                 </li>
               ))}
@@ -59,7 +59,7 @@ export function About() {
 
             <a
               href="#expertise"
-              className="inline-flex items-center justify-center bg-slate-900 hover:bg-slate-800 text-white px-8 py-4 rounded-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2"
+              className="inline-flex items-center justify-center bg-slate-900 hover:bg-slate-800 text-white px-8 py-4 rounded-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-700 focus-visible:ring-offset-2"
             >
               Explore Our Expertise
             </a>

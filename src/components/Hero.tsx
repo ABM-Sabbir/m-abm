@@ -37,16 +37,16 @@ export function Hero() {
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center gap-2 bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-sm font-semibold text-lg transition-all hover:shadow-lg hover:shadow-amber-600/20 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
+                className="inline-flex items-center justify-center gap-2 bg-amber-700 hover:bg-amber-800 text-white px-8 py-4 rounded-sm font-semibold text-lg transition-all hover:shadow-lg hover:shadow-amber-700/20 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-700 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
               >
                 Get a Free Consultation
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
               </a>
               <a
                 href="tel:01511305046"
                 className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/20 px-8 py-4 rounded-sm font-semibold text-lg transition-all backdrop-blur-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
               >
-                <PhoneCall className="w-5 h-5" />
+                <PhoneCall className="w-5 h-5" aria-hidden="true" />
                 Call Us Now
               </a>
             </div>

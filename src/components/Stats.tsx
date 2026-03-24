@@ -3,10 +3,10 @@ import { Users, Award, Briefcase, Scale } from 'lucide-react';
 
 export function Stats() {
   const stats = [
-    { icon: <Briefcase className="w-8 h-8" />, value: '25+', label: 'Years Experience' },
-    { icon: <Users className="w-8 h-8" />, value: '1,500+', label: 'Happy Clients' },
-    { icon: <Scale className="w-8 h-8" />, value: '98%', label: 'Success Rate' },
-    { icon: <Award className="w-8 h-8" />, value: 'Top 10', label: 'Law Firms in Dhaka' },
+    { icon: <Briefcase className="w-8 h-8" aria-hidden="true" />, value: '25+', label: 'Years Experience' },
+    { icon: <Users className="w-8 h-8" aria-hidden="true" />, value: '1,500+', label: 'Happy Clients' },
+    { icon: <Scale className="w-8 h-8" aria-hidden="true" />, value: '98%', label: 'Success Rate' },
+    { icon: <Award className="w-8 h-8" aria-hidden="true" />, value: 'Top 10', label: 'Law Firms in Dhaka' },
   ];
 
   return (

@@ -36,7 +36,7 @@ export function BackToTop() {
           className="fixed bottom-24 right-6 p-3 bg-slate-900 text-white rounded-full shadow-xl hover:bg-slate-800 transition-all z-40 flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2"
           aria-label="Scroll to top"
         >
-          <ArrowUp className="w-5 h-5" />
+          <ArrowUp className="w-5 h-5" aria-hidden="true" />
         </motion.button>
       )}
     </AnimatePresence>

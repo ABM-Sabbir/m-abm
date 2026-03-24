@@ -4,22 +4,22 @@ import { ShieldCheck, Clock, Trophy, Users } from 'lucide-react';
 export function WhyChooseUs() {
   const reasons = [
     {
-      icon: <Trophy className="w-6 h-6" />,
+      icon: <Trophy className="w-6 h-6" aria-hidden="true" />,
       title: 'Proven Track Record',
       desc: 'Decades of combined experience resulting in landmark victories and successful settlements.',
     },
     {
-      icon: <Users className="w-6 h-6" />,
+      icon: <Users className="w-6 h-6" aria-hidden="true" />,
       title: 'Client-Centric Approach',
       desc: 'We prioritize your needs, offering personalized strategies and transparent communication.',
     },
     {
-      icon: <ShieldCheck className="w-6 h-6" />,
+      icon: <ShieldCheck className="w-6 h-6" aria-hidden="true" />,
       title: 'Uncompromising Integrity',
       desc: 'Ethical practice and strict confidentiality are the cornerstones of our firm.',
     },
     {
-      icon: <Clock className="w-6 h-6" />,
+      icon: <Clock className="w-6 h-6" aria-hidden="true" />,
       title: '24/7 Availability',
       desc: 'Legal emergencies do not wait. Our dedicated team is always ready to assist you.',
     },
@@ -64,7 +64,7 @@ export function WhyChooseUs() {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="absolute inset-0 bg-amber-600 rounded-lg transform translate-x-4 translate-y-4 z-0" />
+            <div className="absolute inset-0 bg-amber-700 rounded-lg transform translate-x-4 translate-y-4 z-0" />
             <img
               src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=1000"
               alt="Close-up of a traditional brass scale of justice"

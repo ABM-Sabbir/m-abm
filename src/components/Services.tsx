@@ -4,42 +4,42 @@ import { Building2, Scale, ShieldAlert, Landmark, Briefcase, FileText, Anchor, H
 export function Services() {
   const services = [
     {
-      icon: <Building2 className="w-8 h-8" />,
+      icon: <Building2 className="w-8 h-8" aria-hidden="true" />,
       title: 'Corporate & Company Law',
       desc: 'Comprehensive legal support for businesses, including incorporation, compliance, M&A, and corporate governance.',
     },
     {
-      icon: <Landmark className="w-8 h-8" />,
+      icon: <Landmark className="w-8 h-8" aria-hidden="true" />,
       title: 'Banking & Finance',
       desc: 'Expert advice on financial regulations, loan syndication, debt recovery, and banking litigation.',
     },
     {
-      icon: <Anchor className="w-8 h-8" />,
+      icon: <Anchor className="w-8 h-8" aria-hidden="true" />,
       title: 'Admiralty & Maritime',
       desc: 'Specialized legal services for the shipping industry, including cargo claims, ship arrests, and maritime disputes.',
     },
     {
-      icon: <Handshake className="w-8 h-8" />,
+      icon: <Handshake className="w-8 h-8" aria-hidden="true" />,
       title: 'Dispute Resolution & ADR',
       desc: 'Strategic representation in arbitration, mediation, and complex commercial litigation.',
     },
     {
-      icon: <Briefcase className="w-8 h-8" />,
+      icon: <Briefcase className="w-8 h-8" aria-hidden="true" />,
       title: 'Labour & Employment',
       desc: 'Guidance on employment contracts, workplace disputes, compliance, and labor rights.',
     },
     {
-      icon: <ShieldAlert className="w-8 h-8" />,
+      icon: <ShieldAlert className="w-8 h-8" aria-hidden="true" />,
       title: 'Criminal Defence',
       desc: 'Robust defense strategies for white-collar crimes, corporate fraud, and general criminal litigation.',
     },
     {
-      icon: <FileText className="w-8 h-8" />,
+      icon: <FileText className="w-8 h-8" aria-hidden="true" />,
       title: 'Intellectual Property',
       desc: 'Protection of trademarks, patents, copyrights, and handling of IP infringement cases.',
     },
     {
-      icon: <Scale className="w-8 h-8" />,
+      icon: <Scale className="w-8 h-8" aria-hidden="true" />,
       title: 'VAT, Tax & Customs',
       desc: 'Navigating complex tax laws, customs disputes, and providing strategic tax planning.',
     },
@@ -49,7 +49,7 @@ export function Services() {
     <section id="expertise" className="py-24 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-amber-600 font-semibold tracking-wider uppercase text-sm mb-3">Our Expertise</h2>
+          <h2 className="text-amber-700 font-semibold tracking-wider uppercase text-sm mb-3">Our Expertise</h2>
           <h3 className="text-4xl font-serif font-bold text-slate-900 mb-6 leading-tight">
             Comprehensive Legal Solutions
           </h3>
@@ -68,7 +68,7 @@ export function Services() {
               transition={{ delay: idx * 0.1 }}
               className="bg-white p-8 rounded-lg shadow-sm border border-slate-100 hover:shadow-xl hover:border-amber-200 transition-all group"
             >
-              <div className="w-14 h-14 rounded-lg bg-slate-50 flex items-center justify-center text-amber-600 mb-6 group-hover:bg-amber-600 group-hover:text-white transition-colors">
+              <div className="w-14 h-14 rounded-lg bg-slate-50 flex items-center justify-center text-amber-700 mb-6 group-hover:bg-amber-700 group-hover:text-white transition-colors">
                 {service.icon}
               </div>
               <h4 className="text-xl font-serif font-bold text-slate-900 mb-3">{service.title}</h4>

@@ -19,7 +19,7 @@ export function Team() {
     <section id="team" className="py-24 bg-slate-50 border-t border-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-amber-600 font-semibold tracking-wider uppercase text-sm mb-3">Our Team</h2>
+          <h2 className="text-amber-700 font-semibold tracking-wider uppercase text-sm mb-3">Our Team</h2>
           <h3 className="text-4xl font-serif font-bold text-slate-900 mb-6 leading-tight">
             Meet Our Legal Experts
           </h3>
@@ -46,11 +46,11 @@ export function Team() {
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                  <Scale className="w-8 h-8 text-amber-500" />
+                  <Scale className="w-8 h-8 text-amber-500" aria-hidden="true" />
                 </div>
               </div>
               <h4 className="text-2xl font-serif font-bold text-slate-900 mb-2">{member.name}</h4>
-              <p className="text-amber-600 font-medium">{member.role}</p>
+              <p className="text-amber-700 font-medium">{member.role}</p>
             </motion.div>
           ))}
         </div>

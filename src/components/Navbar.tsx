@@ -24,6 +24,7 @@ export function Navbar() {
 
   return (
     <nav
+      aria-label="Main Navigation"
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'
       }`}
@@ -48,7 +49,7 @@ export function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
-                className={`text-sm font-medium transition-colors hover:text-amber-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 rounded-sm ${
+                className={`text-sm font-medium transition-colors hover:text-amber-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-700 focus-visible:ring-offset-2 rounded-sm ${
                   isScrolled ? 'text-slate-700' : 'text-slate-200'
                 }`}
               >
@@ -57,7 +58,7 @@ export function Navbar() {
             ))}
             <a
               href="#contact"
-              className="bg-amber-600 hover:bg-amber-700 text-white px-6 py-2.5 rounded-sm font-medium transition-colors shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2"
+              className="bg-amber-700 hover:bg-amber-800 text-white px-6 py-2.5 rounded-sm font-medium transition-colors shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-700 focus-visible:ring-offset-2"
             >
               Free Consultation
             </a>
@@ -67,11 +68,12 @@ export function Navbar() {
           <div className="md:hidden">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className={`focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded-sm p-1 ${isScrolled ? 'text-slate-900' : 'text-white'}`}
+              className={`focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-700 rounded-sm p-1 ${isScrolled ? 'text-slate-900' : 'text-white'}`}
               aria-expanded={isMobileMenuOpen}
+              aria-controls="mobile-menu"
               aria-label="Toggle navigation menu"
             >
-              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isMobileMenuOpen ? <X className="w-6 h-6" aria-hidden="true" /> : <Menu className="w-6 h-6" aria-hidden="true" />}
             </button>
           </div>
         </div>
@@ -79,14 +81,14 @@ export function Navbar() {
 
       {/* Mobile Nav */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white absolute top-full left-0 w-full shadow-lg border-t border-slate-100">
+        <div id="mobile-menu" className="md:hidden bg-white absolute top-full left-0 w-full shadow-lg border-t border-slate-100">
           <div className="px-4 pt-2 pb-6 space-y-1">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="block px-3 py-3 text-base font-medium text-slate-700 hover:text-amber-600 hover:bg-slate-50 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
+                className="block px-3 py-3 text-base font-medium text-slate-700 hover:text-amber-700 hover:bg-slate-50 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-700"
               >
                 {link.name}
               </a>
@@ -95,7 +97,7 @@ export function Navbar() {
               <a
                 href="#contact"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="block w-full text-center bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2"
+                className="block w-full text-center bg-amber-700 hover:bg-amber-800 text-white px-6 py-3 rounded-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-700 focus-visible:ring-offset-2"
               >
                 Free Consultation
               </a>

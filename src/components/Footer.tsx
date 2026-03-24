@@ -8,7 +8,7 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-6">
-              <Scale className="w-8 h-8 text-amber-500" />
+              <Scale className="w-8 h-8 text-amber-500" aria-hidden="true" />
               <div className="flex flex-col">
                 <span className="font-serif font-bold text-xl leading-none text-white">
                   M&ABM
@@ -57,9 +57,9 @@ export function Footer() {
                 type="email"
                 aria-label="Email Address for Newsletter"
                 placeholder="Email Address"
-                className="w-full px-4 py-2 bg-slate-900 border border-slate-800 rounded-l-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 text-sm"
+                className="w-full px-4 py-2 bg-slate-900 border border-slate-800 rounded-l-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 text-sm text-white"
               />
-              <button className="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-r-sm text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">
+              <button className="bg-amber-700 hover:bg-amber-800 text-white px-4 py-2 rounded-r-sm text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-700 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">
                 Subscribe
               </button>
             </form>
